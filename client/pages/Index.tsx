@@ -91,30 +91,59 @@ const Index = () => {
       <Header />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-100 via-gray-50 to-white">
+        <section className="pt-20 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-100 via-gray-50 to-white">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12">
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Your Digital Transformation
-                <span className="text-primary"> Partner</span>
-              </h1>
-              <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-                Cutting-edge digital solutions from a world-class agency. AI-compatible, SEO-friendly, and built for success.
-                Save 50%+ on agency services with our international team of expert developers.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-primary text-white px-8 py-4 rounded-lg hover:bg-red-600 transition font-semibold flex items-center justify-center gap-2">
-                  Get Free Consultation
-                  <ArrowRight size={20} />
-                </button>
-                <button className="border-2 border-primary text-primary px-8 py-4 rounded-lg hover:bg-red-50 transition font-semibold">
-                  View Our Work
-                </button>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12">
+              {/* Left Column - Text Content */}
+              <div>
+                <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                  Your Digital Transformation
+                  <span className="text-primary"> Partner</span>
+                </h1>
+                <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+                  Cutting-edge digital solutions from a world-class agency. AI-compatible, SEO-friendly, and built for success.
+                  Save 50%+ on agency services with our international team of expert developers.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <button className="bg-primary text-white px-8 py-4 rounded-lg hover:opacity-90 transition font-semibold flex items-center justify-center gap-2">
+                    Get Free Consultation
+                    <ArrowRight size={20} />
+                  </button>
+                  <button className="border-2 border-primary text-primary px-8 py-4 rounded-lg hover:bg-red-50 transition font-semibold">
+                    View Our Work
+                  </button>
+                </div>
+              </div>
+
+              {/* Right Column - Image */}
+              <div className="flex items-center justify-center">
+                <div className="w-full aspect-square bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg border border-primary/20 flex items-center justify-center overflow-hidden relative">
+                  {/* Decorative elements */}
+                  <div className="absolute top-0 right-0 w-40 h-40 bg-primary/5 rounded-full -mr-20 -mt-20"></div>
+                  <div className="absolute bottom-0 left-0 w-32 h-32 bg-primary/5 rounded-full -ml-16 -mb-16"></div>
+
+                  {/* Main content */}
+                  <div className="relative z-10 text-center px-8">
+                    <div className="text-7xl md:text-8xl mb-6 animate-pulse">💼</div>
+                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Digital Solutions</h3>
+                    <p className="text-gray-600 text-lg">Transforming Ideas into Reality</p>
+
+                    {/* Grid pattern accent */}
+                    <div className="mt-8 grid grid-cols-3 gap-4 max-w-xs mx-auto">
+                      <div className="h-12 bg-primary/10 rounded"></div>
+                      <div className="h-12 bg-primary/20 rounded"></div>
+                      <div className="h-12 bg-primary/10 rounded"></div>
+                      <div className="h-12 bg-primary/20 rounded"></div>
+                      <div className="h-12 bg-primary/30 rounded"></div>
+                      <div className="h-12 bg-primary/20 rounded"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Trust Badges */}
-            <div className="flex flex-wrap justify-center gap-8 mt-16 text-sm text-gray-600">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-8 mt-12 text-sm text-gray-600">
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-primary" />
                 <span>AI-Compatible Solutions</span>
