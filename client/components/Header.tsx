@@ -69,12 +69,12 @@ const Header = () => {
             <Link to="/portfolio" className="text-gray-700 hover:text-primary transition font-medium">
               Portfolio
             </Link>
-          </div>
-
-          <div className="hidden md:flex items-center gap-4">
             <Link to="/contact" className="text-gray-700 hover:text-primary transition font-medium">
               Contact
             </Link>
+          </div>
+
+          <div className="hidden md:flex items-center gap-4">
             <button className="bg-primary text-white px-6 py-2 rounded-lg hover:opacity-90 transition font-medium">
               Login
             </button>
@@ -115,7 +115,7 @@ const Header = () => {
             <Link to="/contact" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={() => setIsOpen(false)}>
               Contact
             </Link>
-            <div className="px-4 py-2">
+            <div className="px-4 py-2 mt-2">
               <button className="w-full bg-primary text-white px-6 py-2 rounded-lg hover:opacity-90 transition font-medium">
                 Login
               </button>
